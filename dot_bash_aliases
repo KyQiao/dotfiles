@@ -1,0 +1,42 @@
+# Directory navigation aliases
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+alias .....='cd ../../../..'
+
+# common alias
+alias vi='vim'
+alias vb='vim ~/.bashrc'
+alias c='clear'
+alias sb='source ~/.bashrc'
+# short for work space
+
+# ssh alias
+alias ssh648='ssh kqiao@phz648.phys.ust.hk'
+alias sshhpc='ssh kqiao@xgpu.ust.hk'
+alias ssh8029='ssh kyqiao@phz8029.phys.ust.hk'
+
+# alias for Windows
+alias cdc="cd /mnt/c/Users/kyqiao/Desktop/julia"
+alias cdd="cd /mnt/d/data"
+
+
+#config env PATH
+USR=$HOME/usr
+
+# add usr/local to path
+PATH="/usr/local/bin/:/usr/local/lib/:usr/local/include:$PATH" 
+
+PATH="USR/bin/:USR/lib/:USR/include:$PATH" 
+PATH="#HOME/software/julia-1.5.1/bin:$PATH" 
+
+# config c++ env
+CPLUS_INCLUDE_PATH=$CPLUS_INCLUDE_PATH:$HOME/software/miniconda3/include
+PLUS_INCLUDE_PATH=$CPLUS_INCLUDE_PATH:/usr/local/include
+LD_LIBRARY_PATH="/usr/local/lib:$LD_LIBRARY_PATH"
+
+#source /home/kyqiao/intel/bin/iccvars.sh intel64 -platform linux 
+
+# g++6 env
+# source /opt/rh/devtoolset-6/enable
+#source /opt/intel/bin/iccvars.sh intel64 -platform linux
