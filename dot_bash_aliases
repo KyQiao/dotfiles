@@ -16,10 +16,6 @@ alias ssh648='ssh kqiao@phz648.phys.ust.hk'
 alias sshhpc='ssh kqiao@xgpu.ust.hk'
 alias ssh8029='ssh kyqiao@phz8029.phys.ust.hk'
 
-# alias for Windows
-alias cdc="cd /mnt/c/Users/kyqiao/Desktop/julia"
-alias cdd="cd /mnt/d/data"
-
 
 #config env PATH
 USR=$HOME/usr

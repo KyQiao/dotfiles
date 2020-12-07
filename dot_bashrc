@@ -117,7 +117,7 @@ fi
 # Specific host config 
 if [ -f ~/.bash_$(hostname) ]; then
     . ~/.bash_$(hostname)
-    alias vh='ce -a bash_$(hostname)'
+    alias vh='vim ~/.bash_$(hostname)'
 fi
 
 
