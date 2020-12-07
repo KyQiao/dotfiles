@@ -40,5 +40,7 @@ LD_LIBRARY_PATH="/usr/local/lib:$LD_LIBRARY_PATH"
 #chezmoi alias
 export EDITOR=vim
 alias ce='chezmoi edit'
+alias cea='chezmoi edit -a'
 alias cdiff='chezmoi diff'
 alias cg='chezmoi cd'
+alias cadd='chezmoi add'
