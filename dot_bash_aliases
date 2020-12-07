@@ -6,7 +6,7 @@ alias .....='cd ../../../..'
 
 # common alias
 alias vi='vim'
-alias vb='vim ~/.bashrc'
+alias vb='ce -a ~/.bashrc'
 alias c='clear'
 alias sb='source ~/.bashrc'
 # short for work space
@@ -45,3 +45,4 @@ LD_LIBRARY_PATH="/usr/local/lib:$LD_LIBRARY_PATH"
 export EDITOR=vim
 alias ce='chezmoi edit'
 alias cdiff='chezmoi diff'
+alias cg='chezmoi cd'

@@ -95,7 +95,6 @@ fi
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
-alias sb='source .bashrc'
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
@@ -118,7 +117,7 @@ fi
 # Specific host config 
 if [ -f ~/.bash_$(hostname) ]; then
     . ~/.bash_$(hostname)
-    alias vh='vim ~/.bash_$(hostname)'
+    alias vh='ce -a bash_$(hostname)'
 fi
 
 
