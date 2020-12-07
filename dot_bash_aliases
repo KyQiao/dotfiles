@@ -40,3 +40,8 @@ LD_LIBRARY_PATH="/usr/local/lib:$LD_LIBRARY_PATH"
 # g++6 env
 # source /opt/rh/devtoolset-6/enable
 #source /opt/intel/bin/iccvars.sh intel64 -platform linux
+
+#chezmoi alias
+export EDITOR=vim
+alias ce='chezmoi edit'
+alias cdiff='chezmoi diff'
