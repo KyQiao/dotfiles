@@ -21,15 +21,15 @@ alias ssh8029='ssh kyqiao@phz8029.phys.ust.hk'
 USR=$HOME/usr
 
 # add usr/local to path
-PATH="/usr/local/bin/:/usr/local/lib/:usr/local/include:$PATH" 
-
-PATH="USR/bin/:USR/lib/:USR/include:$PATH" 
-PATH="#HOME/software/julia-1.5.1/bin:$PATH" 
+PATH="/usr/local/bin/:/usr/local/lib/:/usr/local/lib64/:usr/local/include:$PATH"
+PATH="USR/bin/:USR/lib/:USR/lib64/:USR/include:$PATH"
+PATH="#HOME/software/julia-1.5.1/bin:$PATH"
 
 # config c++ env
 CPLUS_INCLUDE_PATH=$CPLUS_INCLUDE_PATH:$HOME/software/miniconda3/include
-PLUS_INCLUDE_PATH=$CPLUS_INCLUDE_PATH:/usr/local/include
-LD_LIBRARY_PATH="/usr/local/lib:$LD_LIBRARY_PATH"
+CPLUS_INCLUDE_PATH=$CPLUS_INCLUDE_PATH:/usr/local/include:/USR/include
+C_INLUDE_PATH=$CPLUS_INCLUDE_PATH
+LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib:/usr/local/lib64:/USR/lib:/USR/lib64
 
 #source /home/kyqiao/intel/bin/iccvars.sh intel64 -platform linux 
 
