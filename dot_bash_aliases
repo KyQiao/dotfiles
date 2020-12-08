@@ -9,7 +9,7 @@ alias vi='vim'
 alias vb='ce -a ~/.bashrc'
 alias c='clear'
 alias sb='source ~/.bashrc'
-# short for work space
+
 
 # ssh alias
 alias ssh648='ssh kqiao@phz648.phys.ust.hk'
@@ -22,20 +22,14 @@ USR=$HOME/usr
 
 # add usr/local to path
 PATH="/usr/local/bin/:/usr/local/lib/:/usr/local/lib64/:usr/local/include:$PATH"
-PATH="USR/bin/:USR/lib/:USR/lib64/:USR/include:$PATH"
-PATH="#HOME/software/julia-1.5.1/bin:$PATH"
+PATH="$USR/bin/:$USR/lib/:$USR/lib64/:$USR/include:$PATH"
 
 # config c++ env
-CPLUS_INCLUDE_PATH=$CPLUS_INCLUDE_PATH:$HOME/software/miniconda3/include
-CPLUS_INCLUDE_PATH=$CPLUS_INCLUDE_PATH:/usr/local/include:/USR/include
+CPLUS_INCLUDE_PATH="$CPLUS_INCLUDE_PATH:$HOME/software/miniconda3/include"
+CPLUS_INCLUDE_PATH="$/$USR/include:/usr/local/include:CPLUS_INCLUDE_PATH"
 C_INLUDE_PATH=$CPLUS_INCLUDE_PATH
-LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib:/usr/local/lib64:/USR/lib:/USR/lib64
+LD_LIBRARY_PATH="$/$USR/lib:/$USR/lib64:/usr/local/lib:/usr/local/lib64:LD_LIBRARY_PATH"
 
-#source /home/kyqiao/intel/bin/iccvars.sh intel64 -platform linux 
-
-# g++6 env
-# source /opt/rh/devtoolset-6/enable
-#source /opt/intel/bin/iccvars.sh intel64 -platform linux
 
 #chezmoi alias
 export EDITOR=vim
@@ -44,3 +38,8 @@ alias cea='chezmoi edit -a'
 alias cdiff='chezmoi diff'
 alias cg='chezmoi cd'
 alias cadd='chezmoi add'
+alias cup='chezmoi update'
+
+#git alias
+alias gst='git status'
+alias gp='git push'
