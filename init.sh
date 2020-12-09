@@ -1,9 +1,8 @@
 # this will install binary in ./bin folder
 pushd ~
-mkdir -p usr
-mkdir -p backup && mkdir -p code && mkdir -p data
+mkdir -p usr backup code data
 pushd ~/usr
-mkdir -p bin && mkdir -p lib mkdir -p include
+mkdir -p bin lib include
 curl -sfL https://git.io/chezmoi | sh
 # git remote add origin https://github.com/KyQiao/dotfiles.git
 ./bin/chezmoi init https://github.com/KyQiao/dotfiles.git
