@@ -9,7 +9,7 @@ fi
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/kyqiao/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -110,20 +110,10 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-
-alias ll='ls -alF'
-alias la='ls -A'
-alias l='ls -CF'
-
-
 export PATH="/opt/homebrew/bin:$PATH"
 #ZSH_THEME="powerlevel10k/powerlevel10k"
 #ZSH_THEME="agnoster"
 source ~/.oh-my-zsh/custom/themes/powerlevel10k/powerlevel10k.zsh-theme
-
-alias sz='source ~/.zshrc'
-alias vz='vim ~/.zshrc'
-alias c='clear'
 
 export CLICOLOR=1
 export LSCOLORS=ExGxFxdaCxDaDahbadeche
