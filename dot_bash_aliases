@@ -43,3 +43,8 @@ alias cup='chezmoi update'
 #git alias
 alias gst='git status'
 alias gp='git push'
+
+
+#zsh alias
+alias sz='source ~/.zshrc'
+alias vz='cea ~/.zshrc'
