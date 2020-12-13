@@ -26,9 +26,9 @@ PATH="$USR/bin/:$USR/lib/:$USR/lib64/:$USR/include:$PATH"
 
 # config c++ env
 CPLUS_INCLUDE_PATH="$CPLUS_INCLUDE_PATH:$HOME/software/miniconda3/include"
-CPLUS_INCLUDE_PATH="$/$USR/include:/usr/local/include:CPLUS_INCLUDE_PATH"
+CPLUS_INCLUDE_PATH="$$USR/include:/usr/local/include:CPLUS_INCLUDE_PATH"
 C_INLUDE_PATH=$CPLUS_INCLUDE_PATH
-LD_LIBRARY_PATH="$/$USR/lib:/$USR/lib64:/usr/local/lib:/usr/local/lib64:LD_LIBRARY_PATH"
+LD_LIBRARY_PATH="$USR/lib:$USR/lib64:/usr/local/lib:/usr/local/lib64:LD_LIBRARY_PATH"
 
 
 #chezmoi alias
