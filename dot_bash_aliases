@@ -16,11 +16,11 @@ alias sb='source ~/.bashrc'
 
 
 # ssh alias
-alias ssh648='ssh kqiao@phz648.phys.ust.hk'
-alias sshhpc='ssh kqiao@xgpu.ust.hk'
-alias ssh8029='ssh kyqiao@phz8029.phys.ust.hk'
-alias ssh320='ssh kaiyao@phz320.phys.ust.hk'
-alias ssh363='ssh kaiyao@phz363.phys.ust.hk'
+alias ssh648='ssh -Y kqiao@phz648.phys.ust.hk'
+alias sshhpc='ssh -Y kqiao@xgpu.ust.hk'
+alias ssh8029='ssh -Y  kyqiao@phz8029.phys.ust.hk'
+alias ssh320='ssh -Y kaiyao@phz320.phys.ust.hk'
+alias ssh363='ssh -Y kaiyao@phz363.phys.ust.hk'
 
 #config env PATH
 USR=$HOME/usr
