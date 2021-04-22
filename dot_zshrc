@@ -118,7 +118,7 @@ source ~/.oh-my-zsh/custom/themes/powerlevel10k/powerlevel10k.zsh-theme
 export CLICOLOR=1
 export LSCOLORS=ExGxFxdaCxDaDahbadeche
 source ~/.bash_aliases
-
+source ~/.bash_script
 # Specific host config
 if [ -f ~/.bash_$(hostname) ]; then
     . ~/.bash_$(hostname)
